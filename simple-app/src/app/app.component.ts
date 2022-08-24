@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
     this.todos$ = this.http.get(this.url)
   }
 
-  readonly url = "https://localhost:7077/todo"
+  readonly url = "http://localhost:5012/todo"
   obj = { todo: '' };
 
   save() {

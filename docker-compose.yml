@@ -6,14 +6,14 @@ services:
   serverapp:
     image: server
     build:
-      context: .
-      dockerfile: App.Server/Dockerfile
+      context: ./App.Server
+      dockerfile: Dockerfile
     ports:
       - 5012:5012
   clientapp:
     image: clientapp
     build:
-      context: .
-      dockerfile: simple-app/Dockerfile
+      context: ./simple-app
+      dockerfile: Dockerfile
     ports:
-      - 80:80
+      - 4200:80
